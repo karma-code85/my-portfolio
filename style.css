@@ -3,9 +3,14 @@
     box-sizing: border-box;
     margin: 0;
     border-color: rgb(229, 231, 235);
+    font-family: 'Poppins';
+
 }
 .main-continer{
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 img{
     width: 100%;
@@ -38,7 +43,7 @@ img{
 }
 .hambrgar{
     width: 20px;
-    height: 20px;
+    /* height: 20px; */
     font-size: 20px;
 }
 .content-hero{
@@ -62,9 +67,10 @@ img{
 .hero-name-h{
     /* border: 1px solid red; */
     text-align: center;
+    font-size: 1.4rem;
 }
 .hero-name-p{
-    font-size: 14px;
+    font-size: 1rem;
     line-height: 1.3;
 }
 .book-class-option{
@@ -131,11 +137,342 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.lens-one{
-    border: 2px solid red;
     position: relative;
+    gap: 20px;
+}
+/* .lens{
+    position: absolute;
+} */
+.lens-one{
+    /* border: 2px solid red; */
+    position: relative;
+     border-radius: 10px;
+     border: 8px solid rgb(229, 231, 235, 39%);
 }
 .lens-two{
+    /* position: absolute; */
+    border-radius: 10px;
+    width: 90%;
     position: absolute;
+    top: 0;
+    border: 8px solid rgb(229, 231, 235, 39%);
 }
+.about-btn{
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    outline: none;
+    border:none;
+    align-self: flex-start;
+}
+.lens-content h1{
+    /* border: 2px solid red; */
+    font-size: 1.5rem;
+}
+.para-area{
+    display: none;
+}
+.nav-about{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+.lens-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.ran{
+    display: flex;
+    gap: 15px;
+}
+.hr-div{
+    width: 100%;
+}
+.continer-three{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.portfolio-btn{
+    padding: 5px;
+    width: 100px;
+    border-radius: 50px;
+    outline: none;
+    border:none;
+    align-self: center;
+}
+.Featured-head{
+    font-size: 2rem;
+   text-align: center;
+}
+.line{
+    width: 60px;
+    height: 5px;
+    background-color: black;
+    align-self: center;
+    border-radius: 50px;
+}
+.projet-show-first{
+    border-radius: 20px;
+    background-color: rgb(229, 231, 235, 15%);
+}
+.project-img img{
+    border-radius: 20px 20px 0 0;
+}
+.Simple-booking{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Simple-booking h1{
+    font-size: 1.5rem;
+}
+.Simple-booking p{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+.project-simple-btn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+}
+.like-btn{
+    /* border: 2px solid red; */
+    background-color: rgb(229, 231, 235);
+    border-radius: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.explore-btn{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.continer-four{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+     background-color: rgb(242, 243, 245);
+     border-radius: 20px;
+}
+.Mortgage-Calculator-img img{
+    border-radius: 0 0 20px 20px;
+}
+.Mortgage-Calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    
+   
+}
+.Mortgage-Calculator h1{
+    font-size: 1.2rem;
+}
+.Mortgage-Calculator p{
+     font-size: .8rem;
+    line-height: 1.5;
+
+}
+.Mortgage-Calculator-btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    width: 100%;
+    font-size: .5rem;
+    
+    
+}
+.grid-order{
+    
+    display: grid;
+    grid-area: 1/1/1/2;
+}
+.grid-order-two{
+    display: grid;
+    grid-area: 2/1/2/1;
+}
+.grid-order-three{
+    display: grid;
+    grid-area: 2/2/2/2;
+}
+.container-five{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(120, 87, 255,61) ;
+    gap: 20px;
+    border-radius: 20px;
+}
+.Result-Summary-UI-img img{
+    border-radius: 20px 20px 0 0 ;
+}
+.projet-show-three{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+}
+.projet-show-three h1{
+    font-size: 1.3rem;
+    color: white;
+}
+.projet-show-three p{
+    font-size: .8rem;
+    line-height: 1.5;
+    color: white;
+    text-align: lefts;
+}
+.Result-Summary-UI-btn{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(1,1fr);
+    font-size:.7rem;
+    gap: 10px;
+}
+.container-six{
+    display: flex;
+    flex-direction: column;
+     background-color:rgba(158, 137, 209, 0.91) ;
+     border-radius: 20px;
+}
+.Huddle-Landing-Page{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.Huddle-Landing-Page h1{
+    font-size: 1.2rem;
+    color: rgb(237, 236, 236);
+}
+.Huddle-Landing-Page p{
+    font-size: .8rem;
+    line-height: 1.5;
+    color: rgb(235, 235, 235);
+}
+.huddle-btn{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: .7rem;
+    width: 50%;
+    
+}
+.Huddle-Landing-Page-img img{
+    /* border: 2px solid red; */
+    border-radius: 0 0 20px 20px;
+}
+.all{
+    border: black 1px solid;
+    align-self: center;
+    color: black;
+    background-color: transparent;
+}
+.container-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.services-btn{
+    padding: 5px;
+    border-radius: 50px;
+    width: 100px;
+    border: none;
+    font-size: 1rem;
+}
+.help-center{
+    font-size: 2rem;
+    font-weight: 530;
+}
+.services-data{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.services-data-backround{
+    /* border: 2px solid red; */
+    background-color: rgba(245, 245, 245, 0.26);
+    border-radius: 10px;
+    padding: 25px;
+}
+.services-data-backround h1{
+    /* border: 1px solid red; */
+    font-size: 1.2rem;
+}
+.services-data-backround p{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+.container-contact-touch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #fafafa;
+    border-radius: 20px;
+    padding: 30px;
+}
+.let-contact{
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    outline: none;
+    border: none;
+    color: linear;
+    background: linear-gradient(to left, #faf5ff ,#eff6ff );
+    color:#9333ea,#2563eb ;
+}
+.get-in-touch{
+    font-weight: 520;
+}
+.get-in-touch-p{
+    font-size: .8rem;
+    line-height: 1.5;
+}
+.container-contact-booking{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.karma{
+    /* border: 2px solid red; */
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    align-items: center;
+}
+.font-for-contact{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.icon-contact{
+    font-size: 2rem;
+}
+.fa-envelope{
+    color:rgb(115, 115, 244);
+}
+
