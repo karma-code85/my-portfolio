@@ -22,19 +22,62 @@ img{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    position: relative;
 }
 .nav-featuer{
     display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    top: 0;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+}
+.close{
+    /* display: none; */
+    /* border: 1px solid red; */
+    position: absolute;
+    font-size: 30px;
+    right: 0;
+    top: 0;
+   
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2rem;
+    /* display: none; */
+    width: 100%;
+   
 }
 .nav-btn{
-    display: none;
+    /* display: none; */
+    /* position: absolute; */
+
+}
+.btn-for-booking{
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 10px;
+    padding: 7px;
+    font-size: .7rem;
+    
+
 }
 .navbar{
     /* border: 2px solid red; */
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
 }
 .logo{
     font-size: 1.5rem;
@@ -57,7 +100,7 @@ img{
     background-color: rgb(229, 231, 235, 39%);
     padding: 7px;
     border-radius: 50px;
-    font-size: 14px;
+    font-size: 12px;
 }
 .hero-name{
     display: flex;
@@ -85,16 +128,53 @@ img{
     /* color: red; */
     background-color: black;
     color: white;
-    padding: 7px;
+    padding: 4px;
     outline: none;
     border: none;
     border-radius: 10px;
     /* width: 90%; */
     font-size: 1rem;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    align-items: center;
    
     /* border: 1px solid red; */
+}
+.animation-area{
+    height: 10px;
+    width: 10px;
+    background-color: green;
+    border-radius: 50%;
+    position: relative;
+    
+
+}
+.over-span{
+    position: absolute;
+    height:10px;
+    width: 10px;
+    background-color: rgb(117, 223, 117);
+    border-radius: 50%;
+    animation: moveFade 1s infinite;
+}
+@keyframes moveFade{
+    0%{
+        transform: scale(1);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(1.3);
+        opacity: 1;
+    }
+    100%{
+        transform:scale(1);
+        opacity: 0;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .option{
     /* border: 1px solid red; */
@@ -103,7 +183,9 @@ img{
     padding: 10px;
     border-radius: 50px;
     gap: 10px;
+    font-size: 12px;
     color:rgb(62, 136, 62);
+    align-items: center;
 }
 .icon{
     display: flex;
@@ -474,5 +556,216 @@ img{
 }
 .fa-envelope{
     color:rgb(115, 115, 244);
+}
+
+ul{
+    /* border: 1px solid red; */
+    list-style: none;
+}
+.nav-featuer{
+    /* display: none; */
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    /* border: 1px solid red; */
+    
+    
+
+}
+
+.scroll-section{
+    display: none;
+}
+.button{
+    /* border: 1px solid red; */
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+}
+
+@media (min-width:768px) {
+    .main-continer{
+        
+    }
+    .hambrgar{
+        display: none;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        font-size: 1rem;
+        justify-content: center;
+    }
+    .nav-featuer{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        position: static;
+        /* background-color: red; */
+        top: 0;
+        background-color: transparent;
+        height: 30px;
+        
+    }
+    
+    
+    .close{
+        display: none;
+    }
+    .nav-featuer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+    }
+    .logo{
+        display: flex;
+        width: 200px;
+    }
+    .continer-hero{
+        position: relative;
+    }
+    .content{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+    .content-hero{
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+    }
+    .hero-img{
+        /* border: 2px solid red; */
+        /* height: 100; */
+        width: 600px;
+    }
+    .hero-name-h{
+        text-align: left;
+        font-size: 3rem;
+    }
+    .book-class-option{
+        display: flex;
+        flex-direction: row;
+    }
+    .btn-for-booking{
+        width: 100px;
+        
+    }
+    .icon{
+        /* border: 2px solid red; */
+        width: 155px;
+        font-size: 2rem;
+    }
+    .scroll-section{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        bottom: 0;
+        animation: moveFade 6s infinite;
+        
+    }
+    
+    .continer-tow{
+        display: flex;
+        flex-direction: row;
+        /* height: 100vh; */
+        /* border: 1px solid red; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+        
+    }
+    .lens-content{
+        display: flex;
+        /* flex-basis: 60%; */
+    }
+    .lens{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 40%;
+    }
+    .lens-one{
+        width: 45%;
+    }
+    .lens-two{
+        width: 40%;
+    }
+    .projet-show-first{
+        display: flex;
+    }
+    .continer-four{
+        display: flex;
+        flex-direction: row;
+    }
+    .Mortgage-Calculator{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 50%;
+    }
+    .Mortgage-Calculator-img{
+        display: flex;
+        flex-basis: 50%;
+    }
+    .Result-Summary-UI{
+        display: flex;
+    }
+    .Result-Summary-UI-img{
+        display: flex;
+        flex-basis: 50%;
+    }
+    .projet-show-three{
+        display: flex;
+        flex-basis: 50%;
+    }.container-six{
+        display: flex;
+        flex-direction: row;
+    }
+    .Huddle-Landing-Page{
+        flex-basis: 50%;
+    }
+    .Huddle-Landing-Page-img{
+        flex-basis: 50%;
+    }
+    .services-data{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .container-contact-booking{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        
+    }
+    .nav-about{
+        display: flex;
+        justify-content: space-between;
+    }
+    .explore-btn{
+        width: 150px;
+    }
+    .space-my-story{
+        display: flex;
+    }
+    /* .para-area{
+        display: flex;
+    } */
+     .lens-content{
+        display: flex;
+        flex-basis: 50%;
+     }
+     .nav-about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 110%;
+    }
+    
+    
+    
 }
 

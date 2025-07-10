@@ -18,20 +18,25 @@
                 <div class="logo">
                     Marwan😜
                 </div>
-                <div class="nav-featuer">
+                <div class="nav-featuer" id="nav-featuer">
                     <ul>
-                        <li>home</li>
-                        <li>about</li>
-                        <li>work</li>
-                        <li>contact</li>
+                        <li class="like-btn-btn">home</li>
+                        <li class="like-btn-btn">about</li>
+                        <li class="like-btn-btn">work</li>
+                        <li class="like-btn-btn">contact</li>
                     </ul>
+                    <div class="nav-btn ">
+                        <button class=" btn-for-booking ">Book a call</button>
+                    </div>
+                     <div class="close" id="close">
+                    <i class="fa-solid fa-xmark"></i>
+                    
                 </div>
-                <div class="hambrgar">
+                </div>
+                <div class="hambrgar" id="hambrgar">
                     <i class="fa-solid fa-bars"></i>
                 </div>
-                <div class="nav-btn">
-                    <button>Book a call</button>
-                </div>
+
             </div>
             <div class="content">
                 <div class="content-hero">
@@ -48,7 +53,8 @@
                             <button class="book-class">Book a call<i class="fa-solid fa-briefcase"></i></button>
                         </div>
                         <div class="option">
-                                <input type="radio" class="radio">
+                                <span class="animation-area"></span>
+                                <span class="over-span"></span>
                                 <p>Available for new project</p>
                         </div>
                     </div>
@@ -58,20 +64,20 @@
                         <a href="#"><i class="fa-brands fa-linkedin-in icon-icons"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter icon-icons"></i></a>
                     </div>
-                    <div class="hero-img">
-                        <div class="profile">
-                            <img src="./images/simle.jpg" alt="profile-">
-                        </div>
+                </div>
+                <div class="hero-img">
+                    <div class="profile">
+                        <img src="./images/simle.jpg" alt="profile-">
+                    </div>
 
-                    </div>
-                    <div class="scroll-section">
-                        <p>Scroll Down</p>
-                        <i class="fa-solid fa-arrow-down"></i>
-                    </div>
                 </div>
             </div>
+            <div class="scroll-section">
+                    <p>Scroll Down</p>
+                    <i class="fa-solid fa-arrow-down"></i>
+                </div>
         </div>
-        <div class="continer-tow">
+         <div class="continer-tow">
             <div class="lens">
                 <div>
                     <img src="./images/for-first.jpg" alt="" class="lens-one">
@@ -80,16 +86,33 @@
                     <img src="./images/for-second.jpg" alt="" class="lens-two">
                 </div>
             </div>
-            <button class="about-btn">About</button>
             <div class="lens-content">
+                <button class="about-btn">About</button>
                 <div>
                     <h1>Electrical Eng by ❤️, <h1>Developer by default</h1></h1>
                 </div>
                 <div class="nav-about">
-                    <div class="my-story ran">
+                    <div class="my-story ran" id="story-btn" data-target="story" >
                         <i class="fa-solid fa-heart" ></i>
-                        <span>My Story</span>
-                        <p class="para-area">Before becoming a software engineering student in Rwanda, I was pursuing 
+                        <button class="button">My Story</button>
+                    </div>
+                    <div class="experince ran" id="excperince-btn" >
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+                        <button class="button">Experience</button>
+                    </div>
+                    <div class="education ran" id="education-btn" >
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <button class="button">Eduaction</button>
+                    </div>
+                    <div class="skills ran" id="skills-btn" >
+                        <i class="fa-solid fa-code"></i>
+                        <button class="button">Skills</button>
+                        
+                    </div>
+                </div>
+                <div ><hr class="hr-div"></div>
+                <div class="space-my-story" id="story">
+                    <p class="">Before becoming a software engineering student in Rwanda, I was pursuing 
                         a degree in Electrical Engineering back in Sudan. Like many students, I had
                         dreams of building a strong future through education and innovation.
                         But in 2023, due to the war that broke out in my country, my studies were suddenly
@@ -109,24 +132,18 @@
                         experiences that make a difference.
 
                         Let’s turn ideas into reality — one line of code and one design at a time.</p>
-                    </div>
-                    <div class="experince ran">
-                        <i class="fa-solid fa-suitcase-rolling"></i>
-                        <span>Experience</span>
-                        <p class="para-area">April  - July </p>
-                        <p class="para-area">Forntend developer Intern</p>
-                    </div>
-                    <div class="education ran">
-                        <i class="fa-solid fa-user-graduate"></i>
-                        <span>Eduaction</span>
-                        <p class="para-area">2025–Present </p>
-                        <p class="para-area"> Software   Engineering</p>
-                        <p class="para-area">University of Unilak</p>
-                    </div>
-                    <div class="skills ran">
-                        <i class="fa-solid fa-code"></i>
-                        <span>Skills</span>
-                        <div class="frontend-skill para-area">
+                </div>
+                <div class="space-experince" id="excperince">
+                    <p class="para-area">April  - July </p>
+                    <p class="para-area">Forntend developer Intern</p>
+                </div>
+                <div class="space-education" id="education">
+                    <p class="para-area">2025–Present </p>
+                    <p class="para-area"> Software   Engineering</p>
+                    <p class="para-area">University of Unilak</p>
+                </div>
+                <div class="space-skills" id="skills">
+                    <div class="frontend-skill para-area">
                             <div class="like-btn">React</div>
                             <div class="lick-btn">Next.js</div>
                             <div class="lick-btn">Shadcn</div>
@@ -159,12 +176,11 @@
                             <div class="like-btn">Claude</div>
                             <div class="like-btn">Lovable</div>
                         </div>
-                        <div class="currently-learning para-area">
-                            <div class="like-btn">kotln</div>
-                        </div>
-                    </div>
                 </div>
-                <div ><hr class="hr-div"></div>
+                <div class="currently-learning para-area">
+                    <div class="like-btn">kotln</div>
+                </div>
+
             </div>
 
         </div>
