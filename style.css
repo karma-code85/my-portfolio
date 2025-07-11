@@ -53,13 +53,18 @@ ul{
     font-size: 2rem;
     /* display: none; */
     width: 100%;
+    text-transform: capitalize;
    
 }
-.nav-btn{
-    /* display: none; */
-    /* position: absolute; */
-
+.hover {
+    padding: 7px;
+    border-radius: 50px;
 }
+.hover:hover{
+    background-color:  rgb(229, 231, 235, 39%);
+    cursor: pointer;
+}
+
 .btn-for-booking{
     background-color: black;
     color: white;
@@ -77,6 +82,7 @@ ul{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    gap: 80px;
     /* align-items: center; */
 }
 .logo{
@@ -584,7 +590,15 @@ ul{
 }
 
 @media (min-width:768px) {
+    body{
+        border: 2px solid red;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .main-continer{
+        width: 90%;
+       
         
     }
     .hambrgar{
@@ -595,7 +609,7 @@ ul{
         flex-direction: row;
         padding: 0;
         font-size: 1rem;
-        justify-content: center;
+        /* justify-content: ; */
     }
     .nav-featuer{
         display: flex;
@@ -664,7 +678,7 @@ ul{
         position: absolute;
         display: flex;
         flex-direction: column;
-        bottom: 0;
+        bottom: 120px;
         animation: moveFade 6s infinite;
         
     }
