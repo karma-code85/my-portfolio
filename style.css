@@ -26,7 +26,7 @@ img{
     position: relative;
 }
 .nav-featuer{
-    /* display: none; */
+    display: none;
     /* position: absolute; */
     /* right: 0; */
     width: 100%;
@@ -66,7 +66,7 @@ ul{
     /* display: none; */
     /* width: 100%; */
     text-transform: capitalize;
-    gap: 10px;
+    gap: 2px;
     
    
 }
@@ -306,7 +306,16 @@ a:hover{
     /* border: 2px solid red; */
     font-size: 1.5rem;
 }
-.para-area{
+.para-area-one{
+    display: none;
+}
+.space-experince{
+    display: none;
+}
+.space-education{
+    display: none;
+}
+.space-skills{
     display: none;
 }
 .nav-about{
@@ -620,7 +629,7 @@ ul{
     width: 90%;
 }
 .nav-featuer{
-    /* display: none; */
+    display: none;
     width: 100%;
     position: absolute;
     z-index: 2;
@@ -658,6 +667,7 @@ ul{
     }
     .navbar {
         gap: 20px;
+        display: flex;
     }
     .hambrgar{
         display: none;
@@ -666,7 +676,8 @@ ul{
         display: flex;
         flex-direction: row;
         padding: 0;
-        font-size: 1rem;
+        font-size: .2rem;
+        /* font-weight: ; */
         /* justify-content: ; */
     }
     .nav-featuer{
@@ -680,7 +691,6 @@ ul{
         height: 30px;
         
     }
-    
     
     .close{
         display: none;
@@ -841,11 +851,24 @@ ul{
         align-items: center;
         width: 110%;
     }
+    
     .fa-solid{
         display: none;
     }
     #none{
         display: none;
+    }
+    
+    .ran{
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .ran:hover{
+        border-bottom: 4px solid black;
+        border-radius: 3px;
+
     }
     
     

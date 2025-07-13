@@ -1,13 +1,11 @@
 const hambarger=document.getElementById('hambrgar')
 const feature=document.getElementById('nav-featuer')
 const cross=document.getElementById('close')
-console.log('close')
+// console.log('close')
 hambarger.addEventListener('click' ,()=>{
-    if(feature.style.display=='flex'){
+    
         feature.style.display='flex'
-    }else{
-        feature.style.display='flex'
-    }
+    
 })
 
 cross.addEventListener('click', ()=>{
@@ -19,30 +17,36 @@ cross.addEventListener('click', ()=>{
 
 const storyBtn=document.querySelector('#story-btn')
 const excperinceBtn=document.querySelector('#excperince-btn')
-const educationBtn=document.querySelector('#educaton-btn')
+const educationBtn=document.querySelector('#education-btn')
 const skillsBtn=document.querySelector('#skills-btn')
 const results = document.querySelector(".results")
 
 
-const story=document.getElementById('story')
-const experince=document.getElementById('excperince')
-const education=document.getElementById('education')
-const skills=document.getElementById('skills')
-const hide=document.querySelectorAll('#para-area')
+// const story=document.getElementById('story')
+// const experince=document.getElementById('excperince')
+// const education=document.getElementById('education')
+// const skills=document.getElementById('skills')
+const storyVal=document.querySelector('.para-area-one')
+const experinceVal=document.querySelector('.space-experince')
+const educationVal=document.querySelector('.space-education')
+const skillsVal=document.querySelector('.space-skills')
 
-results.innerHTML ="<h1>Hello World!</h1>"
+
+results.innerHTML =storyVal.innerHTML
 
 storyBtn.addEventListener('click', ()=>{
-    results.innerHTML = "<h1>Hello World!</h1>"
+    results.innerHTML = storyVal.innerHTML
 })
 excperinceBtn.addEventListener('click',()=>{
-    results.innerHTML = "<h1>Experience</h1>"
+    results.innerHTML =experinceVal.innerHTML
 })
 educationBtn.addEventListener('click', ()=>{
-    showSection(education)
+    results.innerHTML =educationVal.innerHTML
+    
 })
 skillsBtn.addEventListener('click',()=>{
-    showSection(skills)
+    results.innerHTML =skillsVal.innerHTML
+   
 })
 // function showSection(sectionToShow){
 //     const allSection=[story, experince, education, skills]
@@ -56,8 +60,6 @@ skillsBtn.addEventListener('click',()=>{
 // }
 
 
-const content = [
-    
-]
+
 
 
