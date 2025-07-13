@@ -26,37 +26,51 @@ img{
     position: relative;
 }
 .nav-featuer{
-    display: none;
-    position: absolute;
-    right: 0;
+    /* display: none; */
+    /* position: absolute; */
+    /* right: 0; */
     width: 100%;
-    top: 0;
+    /* top: 0; */
     background-color: white;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    gap: 10px;
+    width: 100%;
+    padding: 20px;
 }
 .close{
     /* display: none; */
     /* border: 1px solid red; */
     position: absolute;
     font-size: 30px;
-    right: 0;
+    right: 50px;
     top: 0;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
    
+}
+.fa-xmark{
+    /* border: 1px solid red; */
+    align-self: flex-end;
+    display: flex;
+    
 }
 ul{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    /* gap: 20px; */
     font-size: 2rem;
     /* display: none; */
-    width: 100%;
+    /* width: 100%; */
     text-transform: capitalize;
+    gap: 10px;
+    
    
 }
+
 .hover {
     padding: 7px;
     border-radius: 50px;
@@ -71,10 +85,14 @@ ul{
     color: white;
     border: none;
     outline: none;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
-    padding: 7px;
-    font-size: .7rem;
+    /* padding: 10px; */
+    /* font-size: .5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 15px; */
     
 
 }
@@ -84,7 +102,28 @@ ul{
     width: 100%;
     justify-content: space-between;
     gap: 80px;
-    /* align-items: center; */
+    /* position: sticky; */
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: #9333ea;
+}
+a{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color:  #888;
+    text-decoration: none;
+    padding: 5px;
+    
+}
+
+a:hover{
+    cursor: pointer;
 }
 .logo{
     font-size: 1.5rem;
@@ -131,6 +170,15 @@ ul{
     justify-content: center;
     align-items: center;
     gap: 20px;
+}
+.hajz{
+    /* border: 2px solid red; */
+    color: white;
+    display: flex;
+    gap: 15px;
+    font-size: 1rem;
+    gap: 15px;
+    padding: 10px;
 }
 .book-class{
     /* color: red; */
@@ -568,6 +616,8 @@ ul{
 ul{
     /* border: 1px solid red; */
     list-style: none;
+    padding: 0;
+    width: 90%;
 }
 .nav-featuer{
     /* display: none; */
@@ -589,12 +639,7 @@ ul{
     border: none;
     font-size: 1rem;
 }
-a{
-        /* border: 1px solid red; */
-        /* text-decoration: none; */
-        color: black;
-        text-decoration: none;
-    }
+
     .btn-for-booking{
         cursor: pointer;
     }
@@ -683,7 +728,8 @@ a{
         flex-direction: row;
     }
     .btn-for-booking{
-        width: 100px;
+        width: 130px;
+        font-size: .8rem;
         
     }
     .icon{
@@ -795,7 +841,12 @@ a{
         align-items: center;
         width: 110%;
     }
-    
+    .fa-solid{
+        display: none;
+    }
+    #none{
+        display: none;
+    }
     
     
 }
