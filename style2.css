@@ -18,19 +18,35 @@ body{
     flex-direction: column;
     justify-content: center;
     align-self: center;
-    gap: 40px;
+    gap: 20px;
+    padding: 20px;
     background-color: #fff;
 }
 img{
     width: 100%;
     border-radius: 10px;
 }
+.createor{
+    display: flex;
+    gap: 10px;
+}
+.createor img{
+    border: 1px solid red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+/* .descrption-pic{
+    border: 1px solid red;
+    height: 200px;
+    width: 200px;
+} */
 header{
-    /* border: 1px solid red; */
+    cursor: pointer;
 }
 header h1{
     /* border: 1px solid red; */
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-align: center;
    color: #2c3e50;
    margin-bottom: 5px;
@@ -38,13 +54,37 @@ header h1{
 header p{
     text-align: center;
   font-size: 0.9rem;
-  color: #888
+  color: #888;
+}
+a{
+    text-decoration: none;
+    color: black;
+
 }
 .hero{
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.hero-value{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-icons{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.right-icons{
+    display: flex;
+    gap: 15px;
 }
 ul{
     list-style: none;

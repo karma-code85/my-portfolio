@@ -681,6 +681,9 @@ ul{
         /* font-weight: ; */
         /* justify-content: ; */
     }
+    a{
+        font-size: .9rem;
+    }
     .nav-featuer{
         display: flex;
         width: 100%;
