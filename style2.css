@@ -52,7 +52,7 @@ header h1{
    margin-bottom: 5px;
 }
 header p{
-    text-align: center;
+text-align: center;
   font-size: 0.9rem;
   color: #888;
 }
@@ -106,14 +106,12 @@ section{
     gap: 10px;
 }
 .problem{
-
   background-color: #eaf4fc;
   padding: 15px 20px;
   margin: 20px 10px;
   border-radius: 4px;
   color: #2c3e50;
   border-left: 7px solid rgb(47, 200, 220);
-  
 }
 @media (min-width:768px) {
     .hero{
