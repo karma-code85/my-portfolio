@@ -813,7 +813,7 @@ ul{
         align-items: center;
     }
     .main-continer{
-        width: 90%;
+        /* width: 90%; */
         justify-content: center;
         align-items: center;
     }
@@ -963,7 +963,7 @@ scale(180deg);
     .Mortgage-Calculator{
         display: flex;
         flex-direction: column;
-        flex-basis: 50%;
+        /* width: 50%; */
     }
     .Mortgage-Calculator-img{
         display: flex;
@@ -983,6 +983,16 @@ scale(180deg);
         display: flex;
         flex-direction: row;
     }
+    .projet-show-second{
+        width: 50%;
+    }
+    .Mortgage-Calculator-img img{
+        border-radius: 0 20px 20px 0;
+    }
+    .Result-Summary-UI-img img{
+        height: 420px;
+        border-radius: 20px 0 0 20px;
+    }
     .Huddle-Landing-Page{
         flex-basis: 50%;
     }
@@ -1000,6 +1010,14 @@ scale(180deg);
         grid-template-rows: repeat(2,1fr);
         
     }
+        .container-six{
+            /* border: 1px solid red; */
+            height: 420px;
+        }
+        .Huddle-Landing-Page-img img{
+            height: 420px;
+            border-radius: 0 20px 20px 0;
+        }
     .nav-about{
         display: flex;
         justify-content: space-between;
@@ -1067,6 +1085,21 @@ scale(180deg);
     }
     .para-area-san{
         width: 50%;
+    }
+    .container-services{
+        /* border: 1px solid red; */
+        width: 80%;
+    }
+    .whole{
+        /* border: 1px solid red;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr); */
+        width: 70%;
+    }
+    .project-img img {
+        height: 100%;
+        border-radius: 20px 0 0 20px;
     }
     
     
