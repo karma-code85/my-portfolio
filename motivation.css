@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.motivation-container{
+    /* border: 1px solid red; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+.motivation-first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.motivation-container>p{
+font-size: .7rem;
+line-height: 1.8;
+}
+h2{
+    font-size: 1rem;
+}
+ul{
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.5;
+}
+img{
+    /* border: 1px solid red; */
+    border-radius: 20px;
+}
+.footer{
+    /* border: 1px solid red; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:768px) {
+    .motivation-container{
+        /* border: 1px solid red; */
+        /* flex-direction: row; */
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+    }
+    .motivation-first img{
+        width: 400px;
+        height: 400px;
+        align-self: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}

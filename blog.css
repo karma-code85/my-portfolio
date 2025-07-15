@@ -10,6 +10,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 80%;
+    margin: auto;
 }
 .follow{
     border: 1px solid black;
