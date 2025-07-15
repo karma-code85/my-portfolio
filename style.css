@@ -61,7 +61,7 @@ img{
 }
 
 ul{
-    display: flex;
+    /* display: flex; */
     flex-direction: column;
     /* gap: 20px; */
     font-size: 2rem;
@@ -264,7 +264,7 @@ a:hover{
     /* border: 2px solid red; */
     border: 10px solid  rgb(229, 231, 235, 39%);
     border-radius: 20px;
-    /* height: 410px; */
+    height: 410px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 
     
@@ -702,7 +702,7 @@ margin-top: 15px;
     gap: 20px;
     background-color: white;
     border-radius: 20px;
-    /* padding: 20px; */
+    padding: 10px;
     align-items: center;
     width: 100%;
     font-size: .7rem;
@@ -900,6 +900,7 @@ scale(180deg);
     }
     .hero-img img{
         /* border: 2px solid red; */
+        height: 492px;
     }
     .hero-name-h{
         text-align: left;
@@ -956,6 +957,7 @@ scale(180deg);
     .projet-show-first{
         display: flex;
     }
+    
     .continer-four{
         display: flex;
         flex-direction: row;
