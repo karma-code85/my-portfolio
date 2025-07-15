@@ -27,6 +27,10 @@ img{
     display: flex;
     gap: 10PX;
 }
+.createor a{
+    font-size: .7rem;
+    padding: 0;
+}
 .createor img{
     /* border: 1px solid red; */
     height: 25px;
@@ -51,6 +55,7 @@ h1{
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .hero-for-blog{
     display: flex;
     color: black;
@@ -98,9 +103,14 @@ a{
 .padding{
     padding: 0;
 }
+.text-text{
+    /* background-color: red; */
+    
+}
 @media (min-width:768px) {
-
-    .fa-solid{
-        /* display: ; */
+    .main-container-blog{
+        /* border: 1px solid red; */
+        width: 50%;
     }
+    
 }
