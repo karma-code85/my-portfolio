@@ -10,8 +10,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    
 }
 .follow{
     border: 1px solid black;
@@ -19,7 +20,6 @@
     padding: 3px;
     font-size: .7rem;
     margin: 20px;
-    
 }
 .li-for-inner-blog{
     font-size: .7rem
@@ -38,4 +38,20 @@
 }
 .problem p{
     font-size: .7rem;
+}
+.comment{
+    border: 1px solid black;
+    width: 100%;
+    padding: 5px;
+    border-radius: 20px;
+    outline: none;
+ 
+}
+@media (min-width:768px) {
+    
+    .descrption-pic a{
+        width: 400px;
+        display: flex;
+        align-self: center;
+    }
 }

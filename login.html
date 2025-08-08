@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-form</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container-form">
+        <div class="navbar">
+            <ol>
+                <li><a href="./list.html">Home</a></li>
+                <li><a href="./index.html">New user</a></li>
+            </ol>
+        </div>
+        <form id="form" class="form ">
+            <h1>Login</h1>
+            <div class="form-structure">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-structure">
+                <label for="password">password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password " required >
+            </div>
+            <button type="submit">login</button>
+        </form>
+        <div class="signup">
+            <p>If your don't have account. </p> <a href="./signup.html">Signup</a>
+        </div>
+        
+    </div>
+    <script>
+        const form = document.getElementById('form');
+
+        form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        console.log("Form submitted")
+
+        const newform = new FormData(form);
+        const data = {
+            email: newform.get('email'),
+            password: newform.get('password')
+        };
+        console.log(data);
+
+        try {
+            const res = await fetch('http://localhost:3000/api/auth/login', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+            });
+
+            const result = await res.json();
+            if (res.ok) {
+                localStorage.setItem('token', result.token)
+                window.location.href ='./blog.html'
+                console.log('User is logged in', result);
+            } else {
+                console.log("User login failed", result);
+            }
+        } catch (error) {
+            console.log("Network error", error);
+        }
+        form.reset()
+    });
+    </script>
+
+</body>
+</html>

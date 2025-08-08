@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+.container-form{
+    /* border: 1px solid red; */
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    /* background-color: #ffffff20; */
+    background: linear-gradient(to right, #667eea, #764ba2);
+    
+}
+ol{
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    justify-content: space-between;
+    gap: 40px;
+}
+.navbar{
+    color: black;
+    /* border: 2px solid red; */
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    width: 270px;
+}
+a{
+    text-decoration: none;
+    /* color: white; */
+    color: black;
+}
+input:hover{
+    border-color: #4a90e2;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    
+}
+input:focus {
+  border-color: #2a7ae2;
+  box-shadow: 0 0 6px rgba(42, 122, 226, 0.5);
+  outline: none;
+}
+a:hover{
+    background-color: #667eea;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 270px;
+     gap: 20px;
+     background-color: white;
+     border-radius: 20px;
+     padding: 30px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+form button{
+    /* border: 3px solid red; */
+    /* display: flex; */
+    align-self: center;
+    width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    background-color: #667eea;
+    border: 1px solid ;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+}
+button:hover{
+     background-color: #5a67d8;
+}
+.form-structure{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input{
+    /* border: 2px solid red; */
+    outline: none;
+    border-radius: 8px;
+    padding: 7px;
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s, box-shadow 0.3s;
+}
+ 
+.btn{
+    /* align-self: center;
+    padding: 5px;
+    width: 100%; */
+    
+}
+.signup{
+    /* border: 1px solid red; */
+    display: flex;
+    color: white;
+    gap: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.signup a{
+    color:rgb(118, 128, 191) ;
+}
