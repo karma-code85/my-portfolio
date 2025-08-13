@@ -47,6 +47,11 @@
     outline: none;
  
 }
+/* .comment-style{
+    background-color: red;
+    display: flex;
+    gap: 20px;
+} */
 @media (min-width:768px) {
     
     .descrption-pic a{

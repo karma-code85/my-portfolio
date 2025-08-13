@@ -4,34 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>user-form</title>
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="./new.css">
 </head>
 <body>
     <div class="container-form">
-        <!-- <div class="navbar">
+        <div class="navbar">
             <ol>
-                <li><a href="./list.html">Home</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./new.html">New user</a></li>
             </ol>
-        </div> -->
-        <form id="form" class="form ">
-            <h1>Login</h1>
-            <div class="form-structure">
-                <label for="email">email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
-            <div class="form-structure">
-                <label for="password">password:</label>
-                <input type="password" id="password" name="password" placeholder="Enter your password " required >
-            </div>
-            <button type="submit">login</button>
-        </form>
-        <div class="signup">
-            <p>If your don't have account. </p> <a href="./new.html">Signup</a>
         </div>
-        
+        <form id="form" class="form ">
+            <h1>New User</h1>
+            <div class="form-structure">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter you username" required>
+            </div>
+            <div class="form-structure">
+                <label for="height">Height:</label>
+                <input type="text" id="height" name="height" placeholder="Enter your height " required >
+            </div>
+            <div class="form-structure">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-structure">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email" required>
+            </div>
+            <div class="form-structure">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="password" required>
+            </div>
+            <div class="btn">
+                <button type="submit" id="btn">create</button>
+            </div>
+        </form>
     </div>
-    <script>
+     <script>
         const form = document.getElementById('form');
 
         form.addEventListener("submit", async (e) => {
@@ -40,13 +50,16 @@
 
         const newform = new FormData(form);
         const data = {
+            username: newform.get('username'),
+            height: newform.get('height'),
+            age: newform.get('age'),
             email: newform.get('email'),
             password: newform.get('password')
         };
         console.log(data);
 
         try {
-            const res = await fetch('http://localhost:3000/api/auth/login', {
+            const res = await fetch('http://localhost:3000/api/auth/register', {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -68,6 +81,5 @@
         form.reset()
     });
     </script>
-
-</body>
-</html>
+    </body>
+    </html>
